@@ -14,10 +14,10 @@ export const ContactForm = ({
   }
   return (
     <form>
-      <input type="text" name="name" value={contactInfo.name} onChange={handleChange} />
-      <input type="text" name="phone" value={contactInfo.phone} onChange={handleChange} />
-      <input type="email" name="email" value={contactInfo.email} onChange={handleChange} />
-      <button type="submit" onClick={handleSubmit}>Add Contact</button>
+      <input type="text" required name="name" value={contactInfo.name} onChange={handleChange} placeholder="Contact Name" />
+      <input type="tel" required name="phone" value={contactInfo.phone} onChange={handleChange} placeholder="Contact Phone (###-###-####)" pattern="[1-9][0-9]{2}-[1-9][0-9]{2}-[0-9]{4}" />
+      <input type="email" required name="email" value={contactInfo.email} onChange={handleChange} placeholder="Contact Email" />
+      <input type="submit" onClick={handleSubmit} />
     </form>
   );
 };

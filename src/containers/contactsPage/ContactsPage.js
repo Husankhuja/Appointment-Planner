@@ -22,7 +22,8 @@ export const ContactsPage = ({ addContact, contacts }) => {
     if the contact name is not a duplicate
     */
     if (!isDublicate) {
-      addContact(contactInfo.name, contactInfo.phone, contactInfo.email);
+      // addContact(contactInfo.name, contactInfo.phone, contactInfo.email);
+      addContact(...Object.values(contactInfo));
       setContactInfo({
         name: "",
         phone: "",
