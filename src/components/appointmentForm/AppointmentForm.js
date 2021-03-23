@@ -20,6 +20,8 @@ export const AppointmentForm = ({
   };
 
   return (
-    AppointmentForm
+    <form>
+      <input />
+    </form>
   );
 };
