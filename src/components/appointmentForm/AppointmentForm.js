@@ -26,7 +26,7 @@ export const AppointmentForm = ({
     <form onSubmit={handleSubmit}>
       <input type="text" required name="title" value={appointmentInfo.title} onChange={handleChange} placeholder="Appointment Title" />
       <ContactPicker required contacts={contacts} onChange={handleChange} />
-      <input type="date" required name="date" value={appointmentInfo.date} onChange={handleChange} />
+      <input type="date" required name="date" value={appointmentInfo.date} min={getTodayString()} onChange={handleChange} />
       <input type="time" required name="time" value={appointmentInfo.time} onChange={handleChange} />
       <input type="submit" onClick={handleSubmit} />
     </form>

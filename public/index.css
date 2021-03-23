@@ -3,6 +3,13 @@
   font-family: "Open Sans", sans-serif;
 }
 
+header {
+  text-align: center;
+}
+header h1 {
+  font-size: 48px;
+}
+
 nav > a {
   font-style: normal;
   font-weight: normal;
@@ -20,6 +27,7 @@ nav {
   padding-bottom: 20px;
   border-bottom: 1px solid #979797;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h2 {
